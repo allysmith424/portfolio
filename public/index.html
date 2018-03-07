@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/jQuery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/skeleton.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/jQuery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#ff6100', '#fff', '#0e2c3a', '#ff6100'],
+				anchors: ['firstPage', 'secondPage', 'thirdPage', 'lastPage'],
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+		});
+	</script>
+
+	<title>Ally Smith</title>
+
+</head>
+
+<body>
+
+	<div id="fullpage">
+
+		<div class="section firstPage">
+
+			<div class="firstPage__header">
+			
+				<p>What a pleasure that our paths should cross<p>
+
+			</div>
+
+			<div class="firstPage__square">&nbsp;</div>
+
+			<div class="firstPage__square-shadow">&nbsp;</div>
+
+		</div>
+
+		<div class="section secondPage">
+
+			<div class="secondPage__stripe even"></div>
+			<div class="secondPage__stripe title"></div>
+			<div class="secondPage__stripe even"></div>
+			<div class="secondPage__stripe odd"></div>
+			<div class="secondPage__stripe even"></div>
+			<div class="secondPage__stripe odd"></div>
+			<div class="secondPage__stripe even"></div>
+
+			<div class=secondPage__main>&nbsp;</div>
+
+		</div>
+
+		<div class="section">Section 3</div>
+
+		<div class="section">Section 4</div>
+
+	</div>
+
+</body>
+
+</html>

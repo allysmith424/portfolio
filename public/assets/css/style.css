@@ -1,0 +1,71 @@
+html {
+	font-size: 62.5%;
+}
+
+.firstPage {
+	position: relative;
+}
+
+.firstPage__header {
+	background-color: white;
+	height: 14.2vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	text-align: center;
+}
+
+.firstPage__header p {
+	color: #0e2c3a;
+	margin-top: 3rem;
+	letter-spacing: .2rem;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+}
+
+.firstPage__square {
+	width: 25vw;
+	height: 45vh;
+	background-color: #fff;
+	position: absolute;
+	right: 25%;
+	top: 30%;
+	min-width: 30rem;
+}
+
+.firstPage__square-shadow {
+	clip-path: polygon(47% 38%, 47% 0, 100% 100%, 30% 100%, 0 38%);
+	width: 63.2rem;
+	height: 76rem;
+	background-color: #0e2c3a;
+	position: absolute;
+	right: -11%;
+	top: 30%;
+	min-width: 30rem;
+}
+
+.secondPage {
+	position: relative;
+}
+
+.secondPage__stripe {
+	height: 14.2vh;
+}
+
+.secondPage__stripe.title {
+	background-color: #0e2c3a; 
+}
+
+.secondPage__stripe.odd {
+	background-color: #ff6100;
+}
+
+.secondPage__main {
+	background-color: #fff;
+	position: absolute;
+	height: 65vh;
+	width: 80vw;
+	left: 10%;
+	top: 20rem;
+}
+

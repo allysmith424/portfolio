@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Ally Smith's personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allysmith424/portfolio.git"
+  },
+  "author": "Ally Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allysmith424/portfolio/issues"
+  },
+  "homepage": "https://github.com/allysmith424/portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "fullpage.js": "^2.9.6"
+  }
+}
