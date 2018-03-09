@@ -1,14 +1,27 @@
+/*
+
+COLORS:
+orange: #ff6100
+blue/grey: #0e2c3a
+lighter blue/grey: #566b75
+
+*/
+
 html {
 	font-size: 62.5%;
 }
 
-.firstPage {
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.section {
 	position: relative;
 }
 
 .firstPage__header {
 	background-color: white;
-	height: 14.2vh;
+	height: 10vh;
 	width: 100vw;
 	position: absolute;
 	top: 0;
@@ -17,55 +30,145 @@ html {
 
 .firstPage__header p {
 	color: #0e2c3a;
-	margin-top: 3rem;
+	margin-top: 2rem;
 	letter-spacing: .2rem;
-	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 }
 
-.firstPage__square {
-	width: 25vw;
-	height: 45vh;
-	background-color: #fff;
+.firstPage__box {
 	position: absolute;
-	right: 25%;
-	top: 30%;
-	min-width: 30rem;
+	height: 80vh;
+	left: 25vw;
+	bottom: 0;
 }
 
-.firstPage__square-shadow {
-	clip-path: polygon(47% 38%, 47% 0, 100% 100%, 30% 100%, 0 38%);
-	width: 63.2rem;
-	height: 76rem;
-	background-color: #0e2c3a;
+.firstPage__text {
 	position: absolute;
-	right: -11%;
-	top: 30%;
-	min-width: 30rem;
+	top: 36vh;
+	left: 30vw;
+}
+
+.firstPage__text--primary {
+	font-family: 'Ubuntu', sans-serif;
+	color: #0e2c3a;
+	text-transform: lowercase;
+	padding-bottom: 2rem;
+}
+
+.firstPage__text--sub {
+	color: #9eaab0;
+	text-transform: uppercase;
+	font-size: 2rem;
+	letter-spacing: .4rem;
+	line-height: 4rem;
 }
 
 .secondPage {
 	position: relative;
 }
 
-.secondPage__stripe {
-	height: 14.2vh;
+.secondPage__stripe.title {
+	background-color: #0e2c3a;
+	position: relative; 
 }
 
-.secondPage__stripe.title {
-	background-color: #0e2c3a; 
+.secondPage__stripe.even {
+	height: 5vh;
 }
 
 .secondPage__stripe.odd {
+	height: 10vh;
 	background-color: #ff6100;
 }
 
-.secondPage__main {
-	background-color: #fff;
-	position: absolute;
-	height: 65vh;
-	width: 80vw;
-	left: 10%;
-	top: 20rem;
+.secondPage__stripe.title {
+	height: 10vh;
 }
+
+.secondPage__main {
+	position: relative;
+	background-color: #fff;
+	max-height: 71.6vh;
+	width: 80vw;
+	margin: 0 auto;
+}
+
+.title-stripe__text {
+	padding-top: 1rem;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	font-size: 2rem;
+}
+
+.title-stripe__text--primary {
+	padding-top: 3rem;
+	font-size: 4rem;
+	padding-left: 10%;
+	color: #fff;
+	padding-right: 2rem
+}
+
+.title-stripe__text--sub {
+	font-size: 2rem;
+	display: in-line;
+	color: #ff6100;
+	padding-left: 2rem;
+}
+
+.title-stripe__nav {
+	position: absolute;
+	right: 5vw;
+	top: 5vh;
+}
+
+.title-stripe__image {
+	position: absolute;
+	left: 0;
+	top: 2rem;
+	height: 10rem;
+
+}
+
+.fp-controlArrow.fp-prev {
+	background-color: #0e2c3a;
+}
+
+.fp-controlArrow.fp-next {
+	background-color: #ff6100;
+}
+
+.thirdPage__frame {
+	height: 90vh;
+	width: 90vw;
+	border: 0.5rem solid #ff6100;
+	left: 5vw;
+	top: 5vh;
+	position: absolute; 
+}
+
+.about-me {
+	max-width: 80vw;
+	margin: 0 auto;
+}
+
+.about-me__headline {
+	color: #ff6100;
+	padding: 3rem 0 0 2rem;
+}
+
+.about-me__text {
+	height: 60vh;
+	color: #fff;
+}
+
+.about-me__text p {
+	padding: 2rem;
+}
+
+.about-me__image {
+	height: 60vh;
+}
+
+
+
 

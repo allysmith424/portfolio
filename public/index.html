@@ -4,23 +4,19 @@
 
 <head>
 
-	<link rel="stylesheet" type="text/css" href="assets/css/jQuery.fullPage.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/skeleton.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/jQuery.fullPage.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/gridStyle.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Ubuntu:700" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/jQuery.fullPage.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				sectionsColor: ['#ff6100', '#fff', '#0e2c3a', '#ff6100'],
-				anchors: ['firstPage', 'secondPage', 'thirdPage', 'lastPage'],
-				menu: '#menu',
-				scrollingSpeed: 1000
-			});
-		});
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="../models/logic.js">
+		
 	</script>
 
 	<title>Ally Smith</title>
@@ -35,31 +31,127 @@
 
 			<div class="firstPage__header">
 			
-				<p>What a pleasure that our paths should cross<p>
+				<p>• What a pleasure that our paths should cross •<p>
 
 			</div>
 
-			<div class="firstPage__square">&nbsp;</div>
+			<img src="assets/images/shadowedBox.png" class="firstPage__box" alt="shadow box">
 
-			<div class="firstPage__square-shadow">&nbsp;</div>
+			<div class="firstPage__text">
+				
+				<h1 class="firstPage__text--primary">Ally Smith</h1>
+
+				<h3 class="firstPage__text--sub">Full stack
+					<br>
+					Web Developer
+				</h3>
+
+			</div>
 
 		</div>
 
 		<div class="section secondPage">
 
-			<div class="secondPage__stripe even"></div>
-			<div class="secondPage__stripe title"></div>
-			<div class="secondPage__stripe even"></div>
-			<div class="secondPage__stripe odd"></div>
-			<div class="secondPage__stripe even"></div>
-			<div class="secondPage__stripe odd"></div>
-			<div class="secondPage__stripe even"></div>
+			<div class="slide" id="slide1">
 
-			<div class=secondPage__main>&nbsp;</div>
+				<div class="secondPage__stripe even"></div>
+				<div class="secondPage__stripe title">
+
+					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Full stack</span></h3>
+
+				</div>
+
+				<div class="secondPage__main">
+					
+					<img src="assets/images/fullStack.png" class="title-stripe__image" alt="full-stack">
+
+				</div>
+
+				<div class="secondPage__stripe odd"></div>
+				<div class="secondPage__stripe even"></div>
+
+			</div>
+
+			<div class="slide" id="slide2">
+
+				<div class="secondPage__stripe even"></div>
+				<div class="secondPage__stripe title">
+
+					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Front end</span></h3>
+
+					<nav class="title-stripe__nav">
+						
+						<a href="#html5">HTML5</a>
+						<a href="#css3">CSS3</a>
+						<a href="#javascript">Javascript</a>
+						<a href="#jquery">jQuery</a>
+
+					</nav>
+
+				</div>
+
+				<div class="secondPage__main">
+
+						<div class="secondPage__grid--front-end grid">
+						  <div class="grid-sizer"></div>
+						  <div class="grid-item">
+						    <img src="assets/images/frontEnd.png">
+						  </div>
+						  <div class="grid-item">
+						    <img src="assets/images/frontEnd/artQuiz.png">
+						  </div>
+						  <div class="grid-item">
+						    <img src="assets/images/frontEnd/trainTimes.png">
+						  </div>
+						  <div class="grid-item">
+						    <img src="assets/images/frontEnd/starWars.png">
+						  </div>
+						  <div class="grid-item">
+						    <img src="assets/images/frontEnd/remoting.png">
+						  </div>
+						  <div class="grid-item">
+						    <img src="assets/images/frontEnd/gifFinder.png">
+						  </div>
+						</div>				
+
+				</div>
+
+				<div class="secondPage__stripe odd"></div>
+				<div class="secondPage__stripe even"></div>
+
+			</div>
 
 		</div>
 
-		<div class="section">Section 3</div>
+		<div class="section thirdPage">
+
+			<div class="thirdPage__frame">
+
+				<div class="about-me row">
+
+					<div class="about-me__text six columns">
+
+						<h2 class="about-me__headline">About me</h2>
+
+						<p>
+
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod hendrerit nunc, sed suscipit nulla vestibulum eu. Duis volutpat elit non augue accumsan aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor cursus nisl, vel interdum tortor tincidunt in. Donec at magna at nisi faucibus pulvinar at vitae elit. Sed commodo enim sit amet libero consequat suscipit. Praesent ornare, purus at mollis interdum, justo nisl consequat nulla, sed faucibus sapien est ullamcorper nunc. Sed ornare sed velit quis pellentesque. Mauris eu dui vitae urna interdum suscipit at suscipit mi. Vivamus nec orci ex. Aliquam semper, augue id pellentesque ultricies, leo libero eleifend eros, vitae tempus sapien sapien quis urna. Duis blandit leo ut commodo vulputate.
+
+						</p>
+
+					</div>
+
+					<div class="about-me__imageDiv six columns">
+
+						<img src="assets/images/allyPortfolio.jpeg" class="about-me__image">
+
+					</div>	
+
+				</div>
+
+			</div>
+
+		</div>
 
 		<div class="section">Section 4</div>
 
