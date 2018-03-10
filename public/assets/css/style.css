@@ -15,6 +15,10 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+p {
+	color: #3c3839;
+}
+
 .section {
 	position: relative;
 }
@@ -67,22 +71,22 @@ body {
 	position: relative;
 }
 
-.secondPage__stripe.title {
+.secondPage__stripe.title, 
+.thirdPage__stripe.title {
 	background-color: #0e2c3a;
 	position: relative; 
+	height: 10vh;
 }
 
-.secondPage__stripe.even {
+.secondPage__stripe.even, 
+.thirdPage__stripe.even {
 	height: 5vh;
 }
 
-.secondPage__stripe.odd {
+.secondPage__stripe.odd,
+.thirdPage__stripe.odd {
 	height: 10vh;
 	background-color: #ff6100;
-}
-
-.secondPage__stripe.title {
-	height: 10vh;
 }
 
 .secondPage__main {
@@ -101,6 +105,8 @@ body {
 }
 
 .title-stripe__text--primary {
+	font-family: 'Ubuntu', sans-serif;
+	text-transform: lowercase;
 	padding-top: 3rem;
 	font-size: 4rem;
 	padding-left: 10%;
@@ -151,22 +157,34 @@ body {
 	margin: 0 auto;
 }
 
-.about-me__headline {
-	color: #ff6100;
-	padding: 3rem 0 0 2rem;
-}
-
 .about-me__text {
-	height: 60vh;
-	color: #fff;
+	height: 71.6vh;
 }
 
 .about-me__text p {
 	padding: 2rem;
 }
 
+.about-me__images {
+	padding-top: 5rem;
+}
+
+.about-me__images--row1 {
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+}
+
+.about-me__images--row1 {
+	padding-top: 3rem;
+}
+
 .about-me__image {
-	height: 60vh;
+	width: 10rem;
+	padding: 1rem;
+}
+
+.arrowImage {
+	width: 1.5rem;
 }
 
 

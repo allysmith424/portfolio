@@ -10,7 +10,7 @@ body {
 /* ---- isotope ---- */
 
 .grid {
-  background: #DDD;
+/*  background: #DDD;*/
 }
 
 /* clear fix */
@@ -34,4 +34,16 @@ body {
 .grid-item img {
   display: block;
   max-width: 100%;
+}
+
+.grid-item__overlay {
+	width: 20%;
+	float: left;
+	display: inline-block;
+	max-width: 100%;
+}
+
+.grid-item__overlay:hover {
+	display: inherit;
+	background-color: #ff6100;
 }
