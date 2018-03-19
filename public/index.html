@@ -10,14 +10,12 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/jQuery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/gridStyle.css">
 	
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Ubuntu:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Lato:900" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="assets/js/jQuery.fullPage.js"></script>
 	<script src="assets/js/isotope.pkgd.min.js"></script>
-	<script type="text/javascript" src="../models/logic.js">
-		
-	</script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
 	<title>Ally Smith</title>
 
@@ -35,7 +33,7 @@
 
 			</div>
 
-			<img src="assets/images/shadowedBox.png" class="firstPage__box" alt="shadow box">
+			<img class="firstPage__box" src="assets/images/shadowedBox.png" alt="shadow box">
 
 			<div class="firstPage__text">
 				
@@ -48,6 +46,8 @@
 
 			</div>
 
+			<i class="fas fa-chevron-down"></i>
+
 		</div>
 
 		<div class="section secondPage">
@@ -57,37 +57,89 @@
 				<div class="secondPage__stripe even"></div>
 				<div class="secondPage__stripe title">
 
-					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Full stack</span></h3>
+					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Front end</span></h3>
+
+					<nav class="title-stripe__nav1">
+						
+						<button data-filter="html5" class="technology-filter">HTML5</button>
+						<button data-filter="css3" class="technology-filter">CSS3</button>
+						<button data-filter="javascript" class="technology-filter">Javascript</button>
+						<button data-filter="jquery" class="technology-filter">jQuery</button>
+						<button data-filter="firebase" class="technology-filter">Firebase</button>
+
+					</nav>
 
 				</div>
 
 				<div class="secondPage__main">
 
-					<div class="secondPage__grid--full-stack grid">
-					  <div class="grid-sizer"></div>
-					  <div class="grid-item">
-					    <img src="assets/images/fullStack.png">
-					  </div>
-					  <div class="grid-item">
-					    <img src="assets/images/frontEnd/artQuiz.png">
-					    <!-- <span class="grid-item__overlay">
-				    		<span class="overlay__text">The Art Quiz
-				    		</span>
-					    </span> -->
-					  </div>
-					  <div class="grid-item">
-					    <img src="assets/images/frontEnd/trainTimes.png">
-					  </div>
-					  <div class="grid-item">
-					    <img src="assets/images/frontEnd/starWars.png">
-					  </div>
-					  <div class="grid-item">
-					    <img src="assets/images/frontEnd/remoting.png">
-					  </div>
-					  <div class="grid-item">
-					    <img src="assets/images/frontEnd/gifFinder.png">
-					  </div>
-					</div>				
+					<div class="secondPage__project-focus1 row undisplayed">
+						
+						<div class="project-focus__image six columns">
+							
+							<img id="project-focus__img1" src="assets/images/friendFinder.jpeg">
+
+						</div>
+
+						<div class="project-focus__info six columns">
+
+							<h2 id="project-focus__title1">Friend Finder</h2>
+
+							<p class="project-focus__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod hendrerit nunc, sed suscipit nulla vestibulum eu. Duis volutpat elit non augue accumsan aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+
+							<div class="project-focus__links">
+
+								<a class="project-focus__view-link" href="#"><img id="project-focus__view1" class="project-focus__link" src="assets/images/view.png"></a>
+								<a href="project-focus__github-link"><img id="project-focus__github1" class="project-focus__link" src="assets/images/github.png"></a>
+
+							</div>
+
+							<button class="project-focus__close-btn" data-slide="1">Back to work</button>
+
+						</div>
+
+					</div>
+
+					<div class="secondPage__grid-container1 displayed">
+
+						<div class="secondPage__grid--front-end grid">
+						  <div class="grid-sizer"></div>
+						  <div class="grid-item html5 css3 javascript jquery firebase node express mysql" data-name="fullStackImg">
+						    <img src="assets/images/frontEnd.png">
+						  </div>
+						  <div class="grid-item html5 css3 javascript jquery node express mysql" data-name="artQuiz" data-slide="1">
+						    <span class="grid-item__overlay">
+					    		<span class="overlay__text">The Art Quiz<br>-</span>
+						    </span>
+						    <img src="assets/images/frontEnd/artQuiz.png">
+						  </div>
+						  <div class="grid-item html5 css3 javascript node express mysql" data-name="starWars" data-slide="1">
+						  	<span class="grid-item__overlay">
+					    		<span class="overlay__text">Star Wars RPG<br>-</span>
+						    </span>
+						    <img src="assets/images/frontEnd/starWars.png">
+						  </div>
+						  <div class="grid-item html5 css3 javascript jquery firebase node express mysql" data-name="trainTimes" data-slide="1">
+						  	<span class="grid-item__overlay">
+					    		<span class="overlay__text">Train Times<br>-</span>
+						    </span>
+						    <img src="assets/images/frontEnd/trainTimes.png">
+						  </div>
+						  <div class="grid-item html5 css3 javascript jquery firebase node express mysql" data-name="remoting" data-slide="1">
+						  	<span class="grid-item__overlay">
+					    		<span class="overlay__text">Remoting in Style<br>-</span>
+						    </span>
+						    <img src="assets/images/frontEnd/remoting.png">
+						  </div>
+						  <div class="grid-item html5 css3 javascript jquery node express mysql">&nbsp;</div>
+						  <div class="grid-item html5 css3 javascript jquery node express mysql"  data-name="gifFinder" data-slide="1">
+						  	<span class="grid-item__overlay">
+					    		<span class="overlay__text">Gif Finder<br>-</span>
+						    </span>
+						    <img src="assets/images/frontEnd/gifFinder.png">
+						  </div>
+						</div>
+					</div>			
 
 				</div>
 
@@ -101,14 +153,13 @@
 				<div class="secondPage__stripe even"></div>
 				<div class="secondPage__stripe title">
 
-					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Front end</span></h3>
+					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Full stack</span></h3>
 
-					<nav class="title-stripe__nav">
+					<nav class="title-stripe__nav2">
 						
-						<a href="#html5">HTML5</a>
-						<a href="#css3">CSS3</a>
-						<a href="#javascript">Javascript</a>
-						<a href="#jquery">jQuery</a>
+						<button data-filter="node" class="technology-filter">Node</button>
+						<button data-filter="express" class="technology-filter">Express</button>
+						<button data-filter="mysql" class="technology-filter">MySQL</button>
 
 					</nav>
 
@@ -116,30 +167,136 @@
 
 				<div class="secondPage__main">
 
-					<div class="secondPage__grid--front-end grid">
-					  <div class="grid-sizer"></div>
-					  <div class="grid-item">
-					    <img src="assets/images/frontEnd.png">
-					  </div>
-					  <div class="grid-item">
-					    <img src="assets/images/frontEnd/artQuiz.png">
-					    <!-- <span class="grid-item__overlay">
-				    		<span class="overlay__text">The Art Quiz
-				    		</span>
-					    </span> -->
-					  </div>
-					  <div class="grid-item">
-					    <img src="assets/images/frontEnd/trainTimes.png">
-					  </div>
-					  <div class="grid-item">
-					    <img src="assets/images/frontEnd/starWars.png">
-					  </div>
-					  <div class="grid-item">
-					    <img src="assets/images/frontEnd/remoting.png">
-					  </div>
-					  <div class="grid-item">
-					    <img src="assets/images/frontEnd/gifFinder.png">
-					  </div>
+					<div class="secondPage__project-focus2 row undisplayed">
+						
+						<div class="project-focus__image six columns">
+							
+							<img id="project-focus__img2" src="assets/images/friendFinder.jpeg">
+
+						</div>
+
+						<div class="project-focus__info six columns">
+
+							<h2 id="project-focus__title2">Friend Finder</h2>
+
+							<p class="project-focus__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod hendrerit nunc, sed suscipit nulla vestibulum eu. Duis volutpat elit non augue accumsan aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+
+							<div class="project-focus__links">
+
+								<img id="project-focus__view2" class="project-focus__link" src="assets/images/view.png">
+								<img id="project-focus__github2" class="project-focus__link" src="assets/images/github.png">
+
+							</div>
+
+							<button class="project-focus__close-btn" data-slide="2">Back to work</button>
+
+						</div>
+
+					</div>
+
+					<div class="secondPage__grid-container2">
+
+						<div class="secondPage__grid--full-stack grid">
+						  <div class="grid-sizer"></div>
+						  <div class="grid-item html5 css3 javascript jquery firebase node express mysql">
+						    <img src="assets/images/fullStack.png">
+						  </div>
+						  <div class="grid-item  html5 css3 javascript jquery firebase node express" data-name="friendFinder" data-slide="2">
+						  	<span class="grid-item__overlay">
+					    		<span class="overlay__text">Friend Finder<br>-</span>
+						    </span>
+						    <img src="assets/images/fullStack/friendFinder.png">
+						  </div>
+						  <div class="grid-item  html5 css3 javascript jquery firebase node express mysql" data-name="burger" data-slide="2">
+						  	<span class="grid-item__overlay">
+					    		<span class="overlay__text">'Ave a Burger<br>-</span>
+						    </span>
+						    <img src="assets/images/fullStack/burger.png">
+						  </div>
+						</div>
+
+					</div>				
+
+				</div>
+
+				<div class="secondPage__stripe odd"></div>
+				<div class="secondPage__stripe even"></div>
+
+			</div>
+
+			<div class="slide" id="slide3">
+
+				<div class="secondPage__stripe even"></div>
+				<div class="secondPage__stripe title">
+
+					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Back end</span></h3>
+
+					<nav class="title-stripe__nav3">
+						
+						<button data-filter="node" class="technology-filter">Node</button>
+						<button data-filter="express" class="technology-filter">Express</button>
+						<button data-filter="mysql" class="technology-filter">MySQL</button>
+
+					</nav>
+
+				</div>
+
+				<div class="secondPage__main">
+
+					<div class="secondPage__project-focus3 row undisplayed">
+						
+						<div class="project-focus__image six columns">
+							
+							<img id="project-focus__img3" src="assets/images/friendFinder.jpeg">
+
+						</div>
+
+						<div class="project-focus__info six columns">
+
+							<h2 id="project-focus__title3">Friend Finder</h2>
+
+							<p class="project-focus__text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod hendrerit nunc, sed suscipit nulla vestibulum eu. Duis volutpat elit non augue accumsan aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+
+							<div class="project-focus__links">
+
+								<img id="project-focus__view3" class="project-focus__link" src="assets/images/view.png">
+								<img id="project-focus__github3" class="project-focus__link" src="assets/images/github.png">
+
+							</div>
+
+							<button class="project-focus__close-btn" data-slide="3">Back to work</button>
+
+						</div>
+
+					</div>
+
+					<div class="secondPage__grid-container3">
+
+						<div class="secondPage__grid--back-end grid">
+						  <div class="grid-sizer"></div>
+						  <div class="grid-item html5 css3 javascript jquery firebase node express mysql">
+						    <img src="assets/images/backEnd.png">
+						  </div>
+						  <div class="grid-item  html5 css3 javascript jquery firebase node express mysql" data-name="bamazon" data-slide="3">
+						  	<span class="grid-item__overlay">
+					    		<span class="overlay__text">Bamazon<br>-</span>
+						    </span>
+						    <img src="assets/images/backEnd/bamazon.png">
+						  </div>
+						  <div class="grid-item  html5 css3 javascript jquery firebase node express" data-name="hangman" data-slide="3">
+						  	<span class="grid-item__overlay">
+					    		<span class="overlay__text">Hangman<br>-</span>
+						    </span>
+						    <img src="assets/images/backEnd/hangman.png">
+						  </div>
+						  <div class="grid-item  html5 css3 javascript jquery firebase node express" data-name="liri" data-slide="3">
+						  	<span class="grid-item__overlay">
+					    		<span class="overlay__text">Liri<br>-</span>
+						    </span>
+						    <img src="assets/images/backEnd/liri.png">
+						  </div>
+						</div>
+
 					</div>				
 
 				</div>
@@ -163,7 +320,7 @@
 
 			<div class="about-me row">
 
-				<div class="about-me__text seven columns">
+				<div class="about-me__text six columns">
 
 					<p>
 
@@ -173,29 +330,29 @@
 
 				</div>
 
-				<div class="about-me__images five columns">
+				<div class="about-me__images six columns">
 
 					<div class="row about-me__images--row1">
 						
-						<img src="assets/images/uk.png" class="about-me__image">
+						<img src="assets/images/uk.png" class="about-me__image pos1">
 
 						<img src="assets/images/rightArrow.png" class="arrowImage">
 						<img src="assets/images/rightArrow.png" class="arrowImage">
 						<img src="assets/images/rightArrow.png" class="arrowImage">
 
-						<img src="assets/images/texas.png" class="about-me__image">
+						<img src="assets/images/texas.png" class="about-me__image pos2">
 
 					</div>
 
 					<div class="row about-me__images--row1">
 						
-						<img src="assets/images/science.png" class="about-me__image">
+						<img src="assets/images/science.png" class="about-me__image pos1">
 
 						<img src="assets/images/rightArrow.png" class="arrowImage">
 						<img src="assets/images/rightArrow.png" class="arrowImage">
 						<img src="assets/images/rightArrow.png" class="arrowImage">
 
-						<img src="assets/images/coding.png" class="about-me__image">
+						<img src="assets/images/coding.png" class="about-me__image pos2">
 
 					</div>
 
@@ -209,9 +366,137 @@
 
 		</div>
 
-		<div class="section">Section 4</div>
+		<div class="section lastPage row">
+
+			<div class="lastPage__container">
+
+				<div class="lastPage__form-div six columns">
+
+					<form class="lastPage__form">
+					  <div class="row">
+					    <div class="six columns">
+					      <label for="exampleEmailInput">Your email</label>
+					      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+					    </div>
+					    <div class="six columns">
+					      <label for="exampleRecipientInput">Reason for contacting</label>
+					      <select class="u-full-width" id="exampleRecipientInput">
+					        <option value="Option 1">Questions</option>
+					        <option value="Option 2">Potential work</option>
+					        <option value="Option 3">Talk England's chances at the World Cup</option>
+					      </select>
+					    </div>
+					  </div>
+					  <label for="exampleMessage">Message</label>
+					  <textarea class="u-full-width" placeholder="Hi Ally…" id="exampleMessage"></textarea>
+					  <input class="lastPage__submit-btn" type="submit" value="Submit">
+					</form>
+
+				</div>
+
+				<div class="lastPage__image-div six columns">
+					
+					<img class="lastPage__ally-img" src="assets/images/allyPortfolio.png">
+
+				</div>
+
+			</div>
+
+		</div>
 
 	</div>
+
+	<script type="text/javascript">
+
+		function displayProject(slide, url) {
+
+			console.log(url);
+
+			$.get(url).then(function(project) {
+
+					console.log(project.image);
+					console.log(project.title);
+					console.log(project.description);
+					console.log(project.github);
+
+					$("#project-focus__img" + slide).attr("src", project.image);
+					$("#project-focus__title" + slide).text(project.title);
+					$("#project-focus__text" + slide).text(project.description);
+					$("#project-focus__view" + slide).attr("href", project.link);
+					$("#project-focus__github" + slide).attr("href", project.github);
+
+					$(".secondPage__grid-container" + slide).removeClass("displayed").addClass("undisplayed")
+					$(".secondPage__project-focus" + slide).removeClass("undisplayed").addClass("displayed");
+					$(".title-stripe__nav, .fp-controlArrow").addClass("undisplayed");
+
+			});
+
+		};
+
+		$(document).ready(function() {
+
+			console.log("Hello Ally");
+
+			$('#fullpage').fullpage({
+				sectionsColor: ['#ff6100', '#fff', '#fff', '#0e2c3a'],
+				anchors: ['firstPage', 'secondPage', 'thirdPage', 'lastPage'],
+				controlArrowColor: '#ff6100',
+				menu: '#menu',
+				scrollingSpeed: 1000
+			});
+
+			var $grid = $('.grid').isotope({
+
+			  itemSelector: '.grid-item',
+			  percentPosition: true,
+			  masonry: {
+			    columnWidth: '.grid-sizer'
+			  }
+
+			});
+
+			$(".technology-filter").on("click", function() {
+
+				console.log("Ally!");
+
+				var filterValue = "."
+
+				filterValue += $(this).data("filter");
+
+				console.log(filterValue);
+
+				$grid.isotope({ filter: filterValue });
+				
+			});
+
+			$(".grid-item").on("click", function() {
+
+				console.log($(this).data("name"));
+
+				console.log($(this).data("slide"));
+
+				var url = "/api/projects/" + $(this).data("name");
+
+				displayProject($(this).data("slide"), url);
+
+			});
+
+			$(".project-focus__close-btn").on("click", function() {
+
+				var slide = $(this).data("slide");
+
+				$(".secondPage__grid-container" + slide).removeClass("undisplayed").addClass("displayed")
+
+				$(".secondPage__project-focus" + slide).removeClass("displayed").addClass("undisplayed");
+
+				$(".title-stripe__nav, .fp-controlArrow").removeClass("undisplayed").addClass("displayed");
+
+			});
+
+
+		});
+
+	</script>
 
 </body>
 
