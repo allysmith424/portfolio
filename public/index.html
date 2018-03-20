@@ -59,7 +59,7 @@
 
 					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Front end</span></h3>
 
-					<nav class="title-stripe__nav1">
+					<nav class="title-stripe__nav">
 						
 						<button data-filter="html5" class="technology-filter">HTML5</button>
 						<button data-filter="css3" class="technology-filter">CSS3</button>
@@ -85,12 +85,12 @@
 
 							<h2 id="project-focus__title1">Friend Finder</h2>
 
-							<p class="project-focus__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod hendrerit nunc, sed suscipit nulla vestibulum eu. Duis volutpat elit non augue accumsan aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+							<p id="project-focus__text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod hendrerit nunc, sed suscipit nulla vestibulum eu. Duis volutpat elit non augue accumsan aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
 
 							<div class="project-focus__links">
 
-								<a class="project-focus__view-link" href="#"><img id="project-focus__view1" class="project-focus__link" src="assets/images/view.png"></a>
-								<a href="project-focus__github-link"><img id="project-focus__github1" class="project-focus__link" src="assets/images/github.png"></a>
+								<a id="project-focus__view-link1" href="#" target="_blank"><img id="project-focus__view" class="project-focus__link" src="assets/images/view.png"></a>
+								<a id="project-focus__github-link1" href="#" target="_blank"><img id="project-focus__github" class="project-focus__link" src="assets/images/github.png"></a>
 
 							</div>
 
@@ -155,7 +155,7 @@
 
 					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Full stack</span></h3>
 
-					<nav class="title-stripe__nav2">
+					<nav class="title-stripe__nav">
 						
 						<button data-filter="node" class="technology-filter">Node</button>
 						<button data-filter="express" class="technology-filter">Express</button>
@@ -179,12 +179,12 @@
 
 							<h2 id="project-focus__title2">Friend Finder</h2>
 
-							<p class="project-focus__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod hendrerit nunc, sed suscipit nulla vestibulum eu. Duis volutpat elit non augue accumsan aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+							<p id="project-focus__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod hendrerit nunc, sed suscipit nulla vestibulum eu. Duis volutpat elit non augue accumsan aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
 
 							<div class="project-focus__links">
 
-								<img id="project-focus__view2" class="project-focus__link" src="assets/images/view.png">
-								<img id="project-focus__github2" class="project-focus__link" src="assets/images/github.png">
+								<a id="project-focus__view-link2" href="#" target="_blank"><img id="project-focus__view" class="project-focus__link" src="assets/images/view.png"></a>
+								<a id="project-focus__github-link2" href="#" target="_blank"><img id="project-focus__github" class="project-focus__link" src="assets/images/github.png"></a>
 
 							</div>
 
@@ -231,7 +231,7 @@
 
 					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Back end</span></h3>
 
-					<nav class="title-stripe__nav3">
+					<nav class="title-stripe__nav">
 						
 						<button data-filter="node" class="technology-filter">Node</button>
 						<button data-filter="express" class="technology-filter">Express</button>
@@ -255,12 +255,12 @@
 
 							<h2 id="project-focus__title3">Friend Finder</h2>
 
-							<p class="project-focus__text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod hendrerit nunc, sed suscipit nulla vestibulum eu. Duis volutpat elit non augue accumsan aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+							<p id="project-focus__text3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod hendrerit nunc, sed suscipit nulla vestibulum eu. Duis volutpat elit non augue accumsan aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
 
 							<div class="project-focus__links">
 
-								<img id="project-focus__view3" class="project-focus__link" src="assets/images/view.png">
-								<img id="project-focus__github3" class="project-focus__link" src="assets/images/github.png">
+								<a id="project-focus__view-link3" href="#" target="_blank"><img id="project-focus__view3" class="project-focus__link" src="assets/images/view.png"></a>
+								<a id="project-focus__github-link3" href="#" target="_blank"><img id="project-focus__github" class="project-focus__link" src="assets/images/github.png"></a>
 
 							</div>
 
@@ -410,21 +410,19 @@
 
 		function displayProject(slide, url) {
 
-			console.log(url);
-
 			$.get(url).then(function(project) {
-
-					console.log(project.image);
-					console.log(project.title);
-					console.log(project.description);
-					console.log(project.github);
 
 					$("#project-focus__img" + slide).attr("src", project.image);
 					$("#project-focus__title" + slide).text(project.title);
-					$("#project-focus__text" + slide).text(project.description);
-					$("#project-focus__view" + slide).attr("href", project.link);
-					$("#project-focus__github" + slide).attr("href", project.github);
-
+					$("#project-focus__text" + slide).html(project.description);
+					$("#project-focus__github-link" + slide).attr("href", project.github);
+					if (project.link !== undefined) {
+						$("#project-focus__view-link" + slide).attr("href", project.link);
+					}
+					else {
+						$("#project-focus__view" + slide).remove();
+						$("#project-focus__view-link" + slide).remove();
+					}
 					$(".secondPage__grid-container" + slide).removeClass("displayed").addClass("undisplayed")
 					$(".secondPage__project-focus" + slide).removeClass("undisplayed").addClass("displayed");
 					$(".title-stripe__nav, .fp-controlArrow").addClass("undisplayed");

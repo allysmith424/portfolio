@@ -10,7 +10,7 @@ function displayProject() {
 
 			$(".secondPage__grid-container").removeClass("displayed").addClass("undisplayed")
 			$(".secondPage__project-focus").removeClass("undisplayed").addClass("displayed");
-			$(".title-stripe__nav, .fp-controlArrow").addClass("undisplayed");
+			$(".title-stripe__nav", ".fp-controlArrow").addClass("undisplayed");
 
 	});
 

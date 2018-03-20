@@ -162,10 +162,7 @@ p {
 /*	padding-left: .5rem;*/
 }
 
-.title-stripe__nav1,
-.title-stripe__nav2,
-.title-stripe__nav3,
- {
+.title-stripe__nav {
 	position: absolute;
 	right: 5vw;
 	top: 5vh;
@@ -218,9 +215,7 @@ p {
 	opacity: .4;
 }
 
-#project-focus__close-btn1,
-#project-focus__close-btn2,
-#project-focus__close-btn3 {
+.project-focus__close-btn {
 	position: absolute;
 	bottom: 20%;
 	right: 5%;
