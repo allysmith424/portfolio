@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/jQuery.fullPage.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/gridStyle.css">
-	
+
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600|Lato:900" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -28,7 +28,7 @@
 		<div class="section firstPage">
 
 			<div class="firstPage__header">
-			
+
 				<p>• What a pleasure that our paths should cross •<p>
 
 			</div>
@@ -36,7 +36,7 @@
 			<img class="firstPage__box" src="assets/images/shadowedBox.png" alt="shadow box">
 
 			<div class="firstPage__text">
-				
+
 				<h1 class="firstPage__text--primary">Ally Smith</h1>
 
 				<h3 class="firstPage__text--sub">Full stack
@@ -60,12 +60,13 @@
 					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Front end</span></h3>
 
 					<nav class="title-stripe__nav">
-						
+
 						<button data-filter="html5" class="technology-filter">HTML5</button>
 						<button data-filter="css3" class="technology-filter">CSS3</button>
 						<button data-filter="javascript" class="technology-filter">Javascript</button>
 						<button data-filter="jquery" class="technology-filter">jQuery</button>
 						<button data-filter="firebase" class="technology-filter">Firebase</button>
+						<button data-filter="react" class="technology-filter">React</button>
 
 					</nav>
 
@@ -74,9 +75,9 @@
 				<div class="secondPage__main">
 
 					<div class="secondPage__project-focus1 row undisplayed">
-						
+
 						<div class="project-focus__image six columns">
-							
+
 							<img id="project-focus__img1" src="assets/images/friendFinder.jpeg">
 
 						</div>
@@ -104,7 +105,7 @@
 
 						<div class="secondPage__grid--front-end grid">
 						  <div class="grid-sizer"></div>
-						  <div class="grid-item html5 css3 javascript jquery firebase node express mysql" data-name="fullStackImg">
+						  <div class="grid-item html5 css3 javascript jquery firebase node express mysql react mongo" data-name="fullStackImg">
 						    <img src="assets/images/frontEnd.png">
 						  </div>
 						  <div class="grid-item html5 css3 javascript jquery node express mysql" data-name="artQuiz" data-slide="1">
@@ -131,15 +132,20 @@
 						    </span>
 						    <img src="assets/images/frontEnd/remoting.png">
 						  </div>
-						  <div class="grid-item html5 css3 javascript jquery node express mysql">&nbsp;</div>
 						  <div class="grid-item html5 css3 javascript jquery node express mysql"  data-name="gifFinder" data-slide="1">
 						  	<span class="grid-item__overlay">
 					    		<span class="overlay__text">Gif Finder<br>-</span>
 						    </span>
 						    <img src="assets/images/frontEnd/gifFinder.png">
 						  </div>
+							<div class="grid-item html5 css3 javascript react node express mysql mongo"  data-name="clickyGame" data-slide="1">
+								<span class="grid-item__overlay">
+									<span class="overlay__text">Man United Click Game<br>-</span>
+								</span>
+								<img src="assets/images/frontEnd/clickyGame.png">
+							</div>
 						</div>
-					</div>			
+					</div>
 
 				</div>
 
@@ -156,10 +162,11 @@
 					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Full stack</span></h3>
 
 					<nav class="title-stripe__nav">
-						
+
 						<button data-filter="node" class="technology-filter">Node</button>
 						<button data-filter="express" class="technology-filter">Express</button>
 						<button data-filter="mysql" class="technology-filter">MySQL</button>
+						<button data-filter="mongo" class="technology-filter">MongoDB</button>
 
 					</nav>
 
@@ -168,9 +175,9 @@
 				<div class="secondPage__main">
 
 					<div class="secondPage__project-focus2 row undisplayed">
-						
+
 						<div class="project-focus__image six columns">
-							
+
 							<img id="project-focus__img2" src="assets/images/friendFinder.jpeg">
 
 						</div>
@@ -198,24 +205,36 @@
 
 						<div class="secondPage__grid--full-stack grid">
 						  <div class="grid-sizer"></div>
-						  <div class="grid-item html5 css3 javascript jquery firebase node express mysql">
+						  <div class="grid-item html5 css3 javascript jquery react firebase node express mysql mongo">
 						    <img src="assets/images/fullStack.png">
 						  </div>
-						  <div class="grid-item  html5 css3 javascript jquery firebase node express" data-name="friendFinder" data-slide="2">
+						  <div class="grid-item  html5 css3 javascript jquery react firebase node express" data-name="friendFinder" data-slide="2">
 						  	<span class="grid-item__overlay">
 					    		<span class="overlay__text">Friend Finder<br>-</span>
 						    </span>
 						    <img src="assets/images/fullStack/friendFinder.png">
 						  </div>
-						  <div class="grid-item  html5 css3 javascript jquery firebase node express mysql" data-name="burger" data-slide="2">
+						  <div class="grid-item  html5 css3 javascript jquery react firebase node express mysql" data-name="burger" data-slide="2">
 						  	<span class="grid-item__overlay">
 					    		<span class="overlay__text">'Ave a Burger<br>-</span>
 						    </span>
 						    <img src="assets/images/fullStack/burger.png">
 						  </div>
+							<div class="grid-item  html5 css3 javascript jquery react firebase node express mysql" data-name="buyersWorkbench" data-slide="2">
+						  	<span class="grid-item__overlay">
+					    		<span class="overlay__text">Buyers Workbench<br>-</span>
+						    </span>
+						    <img src="assets/images/fullStack/buyersWorkbench.png">
+						  </div>
+							<div class="grid-item  html5 css3 javascript jquery react firebase node express mongo" data-name="rankingsDebate" data-slide="2">
+						  	<span class="grid-item__overlay">
+					    		<span class="overlay__text">FIFA Rankings Debate<br>-</span>
+						    </span>
+						    <img src="assets/images/fullStack/rankingsDebate.png">
+						  </div>
 						</div>
 
-					</div>				
+					</div>
 
 				</div>
 
@@ -232,7 +251,7 @@
 					<h3 class="title-stripe__text"><span class="title-stripe__text--primary">Work</span><span class="title-stripe__text--sub">Back end</span></h3>
 
 					<nav class="title-stripe__nav">
-						
+
 						<button data-filter="node" class="technology-filter">Node</button>
 						<button data-filter="express" class="technology-filter">Express</button>
 						<button data-filter="mysql" class="technology-filter">MySQL</button>
@@ -244,9 +263,9 @@
 				<div class="secondPage__main">
 
 					<div class="secondPage__project-focus3 row undisplayed">
-						
+
 						<div class="project-focus__image six columns">
-							
+
 							<img id="project-focus__img3" src="assets/images/friendFinder.jpeg">
 
 						</div>
@@ -274,16 +293,16 @@
 
 						<div class="secondPage__grid--back-end grid">
 						  <div class="grid-sizer"></div>
-						  <div class="grid-item html5 css3 javascript jquery firebase node express mysql">
+						  <div class="grid-item html5 css3 javascript jquery react firebase node express mysql mongo">
 						    <img src="assets/images/backEnd.png">
 						  </div>
-						  <div class="grid-item  html5 css3 javascript jquery firebase node express mysql" data-name="bamazon" data-slide="3">
+						  <div class="grid-item  html5 css3 javascript jquery react firebase node express mysql mongo" data-name="bamazon" data-slide="3">
 						  	<span class="grid-item__overlay">
 					    		<span class="overlay__text">Bamazon<br>-</span>
 						    </span>
 						    <img src="assets/images/backEnd/bamazon.png">
 						  </div>
-						  <div class="grid-item  html5 css3 javascript jquery firebase node express" data-name="hangman" data-slide="3">
+						  <div class="grid-item  html5 css3 javascript jquery react firebase node express mongo" data-name="hangman" data-slide="3">
 						  	<span class="grid-item__overlay">
 					    		<span class="overlay__text">Hangman<br>-</span>
 						    </span>
@@ -297,7 +316,7 @@
 						  </div>
 						</div>
 
-					</div>				
+					</div>
 
 				</div>
 
@@ -311,7 +330,7 @@
 		<div class="section thirdPage">
 
 			<div class="thirdPage__stripe even"></div>
-			
+
 			<div class="thirdPage__stripe title">
 
 				<h3 class="title-stripe__text"><span class="title-stripe__text--primary">About</span></h3>
@@ -324,7 +343,13 @@
 
 					<p>
 
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod hendrerit nunc, sed suscipit nulla vestibulum eu. Duis volutpat elit non augue accumsan aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus auctor cursus nisl, vel interdum tortor tincidunt in. Donec at magna at nisi faucibus pulvinar at vitae elit. Sed commodo enim sit amet libero consequat suscipit. Praesent ornare, purus at mollis interdum, justo nisl consequat nulla, sed faucibus sapien est ullamcorper nunc. Sed ornare sed velit quis pellentesque. Mauris eu dui vitae urna interdum suscipit at suscipit mi. Vivamus nec orci ex. Aliquam semper, augue id pellentesque ultricies, leo libero eleifend eros, vitae tempus sapien sapien quis urna. Duis blandit leo ut commodo vulputate.
+						Brit in Texas.
+						<br><br>
+						Scientist come developer.
+						<br><br>
+						Last year I took advantage of my American passport to move to Austin and become a web developer. I have a host of experience in full stack development, with a particular focus on and interest in front-end technologies. Before working in tech I studied biomedicine at university, conducted laser bioeffect resarch and worked in advertising in London.
+						<br><br>
+						Feel free to take a look at what I've been up to and get in touch to chat.
 
 					</p>
 
@@ -333,7 +358,7 @@
 				<div class="about-me__images six columns">
 
 					<div class="row about-me__images--row1">
-						
+
 						<img src="assets/images/uk.png" class="about-me__image pos1">
 
 						<img src="assets/images/rightArrow.png" class="arrowImage">
@@ -345,7 +370,7 @@
 					</div>
 
 					<div class="row about-me__images--row1">
-						
+
 						<img src="assets/images/science.png" class="about-me__image pos1">
 
 						<img src="assets/images/rightArrow.png" class="arrowImage">
@@ -358,45 +383,49 @@
 
 				</div>
 
-			</div>	
+			</div>
 
 			<div class="thirdPage__stripe odd"></div>
-			
+
 			<div class="thirdPage__stripe even"></div>
 
 		</div>
 
 		<div class="section lastPage row">
 
-			<div class="lastPage__container">
+			<div class="lastPage__clip-path-div">
 
-				<div class="lastPage__form-div six columns">
+				<div class="lastPage__container">
 
-					<form class="lastPage__form">
-					  <div class="row">
-					    <div class="six columns">
-					      <label for="exampleEmailInput">Your email</label>
-					      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
-					    </div>
-					    <div class="six columns">
-					      <label for="exampleRecipientInput">Reason for contacting</label>
-					      <select class="u-full-width" id="exampleRecipientInput">
-					        <option value="Option 1">Questions</option>
-					        <option value="Option 2">Potential work</option>
-					        <option value="Option 3">Talk England's chances at the World Cup</option>
-					      </select>
-					    </div>
-					  </div>
-					  <label for="exampleMessage">Message</label>
-					  <textarea class="u-full-width" placeholder="Hi Ally…" id="exampleMessage"></textarea>
-					  <input class="lastPage__submit-btn" type="submit" value="Submit">
-					</form>
+					<div class="lastPage__form-div six columns">
 
-				</div>
+						<form class="lastPage__form">
+						  <div class="row">
+						    <div class="six columns">
+						      <label for="exampleEmailInput">Your email</label>
+						      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+						    </div>
+						    <div class="six columns">
+						      <label for="exampleRecipientInput">Reason for contacting</label>
+						      <select class="u-full-width" id="exampleRecipientInput">
+						        <option value="Option 1">Questions</option>
+						        <option value="Option 2">Potential work</option>
+						        <option value="Option 3">Talk England's chances at the World Cup</option>
+						      </select>
+						    </div>
+						  </div>
+						  <label for="exampleMessage">Message</label>
+						  <textarea class="u-full-width" placeholder="Hi Ally…" id="exampleMessage"></textarea>
+						  <input class="lastPage__submit-btn" type="submit" value="Submit">
+						</form>
 
-				<div class="lastPage__image-div six columns">
-					
-					<img class="lastPage__ally-img" src="assets/images/allyPortfolio.png">
+					</div>
+
+					<div class="lastPage__image-div six columns">
+
+						<img class="lastPage__ally-img" src="assets/images/allyPortfolio.png">
+
+					</div>
 
 				</div>
 
@@ -464,7 +493,7 @@
 				console.log(filterValue);
 
 				$grid.isotope({ filter: filterValue });
-				
+
 			});
 
 			$(".grid-item").on("click", function() {

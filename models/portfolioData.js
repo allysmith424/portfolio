@@ -1,7 +1,7 @@
 var project = [
 
 	{
-	
+
 		"id": "friendFinder",
 		"title": "Friend Finder",
 		"image": "assets/images/appScreenshots/fullStack/friendFinder.jpeg",
@@ -10,7 +10,7 @@ var project = [
 		"github": "https://github.com/allysmith424/friendFinder"
 
 	}, {
-	
+
 		"id": "burger",
 		"title": "'Ave a Burger!'",
 		"image": "assets/images/appScreenshots/fullStack/burger.jpeg",
@@ -19,7 +19,7 @@ var project = [
 		"github": "https://github.com/allysmith424/burger"
 
 	}, {
-	
+
 		"id": "artQuiz",
 		"title": "The Art Quiz",
 		"image": "assets/images/appScreenshots/frontEnd/artQuiz.jpeg",
@@ -28,7 +28,7 @@ var project = [
 		"github": "https://github.com/allysmith424/TriviaGame"
 
 	}, {
-	
+
 		"id": "starWars",
 		"title": "Star Wars RPG",
 		"image": "assets/images/appScreenshots/frontEnd/starWars.jpeg",
@@ -37,7 +37,7 @@ var project = [
 		"github": "https://github.com/allysmith424/week-4-game"
 
 	}, {
-	
+
 		"id": "gifFinder",
 		"title": "Gif Finder",
 		"image": "assets/images/appScreenshots/frontEnd/gifFinder.jpeg",
@@ -46,7 +46,7 @@ var project = [
 		"github": "https://github.com/allysmith424/GifTastic"
 
 	}, {
-	
+
 		"id": "remoting",
 		"title": "Remoting in Style",
 		"image": "assets/images/appScreenshots/frontEnd/remoting.jpeg",
@@ -55,7 +55,7 @@ var project = [
 		"github": "https://github.com/allysmith424/remotingInStyle"
 
 	}, {
-	
+
 		"id": "trainTimes",
 		"title": "Train Times",
 		"image": "assets/images/appScreenshots/frontEnd/trainTimes.jpeg",
@@ -64,7 +64,7 @@ var project = [
 		"github": "https://github.com/allysmith424/TrainTimes"
 
 	}, {
-	
+
 		"id": "liri",
 		"title": "Liri CLI",
 		"image": "assets/images/appScreenshots/backEnd/liri.jpeg",
@@ -72,7 +72,7 @@ var project = [
 		"github": "https://github.com/allysmith424/liri-node-app"
 
 	}, {
-	
+
 		"id": "hangman",
 		"title": "Hangman CLI",
 		"image": "assets/images/appScreenshots/backEnd/hangman.jpeg",
@@ -80,13 +80,38 @@ var project = [
 		"github": "https://github.com/allysmith424/hangmanCLI"
 
 	}, {
-	
+
 		"id": "bamazon",
 		"title": "Bamazon CLI",
 		"image": "assets/images/appScreenshots/backEnd/bamazon.jpeg",
-		"description": "This command line interface applications is an Amazon-like storefront with MySQL and Node. Bamazon's essential function is to take in orders from customers and depletes stock from the store's inventory. SQL-based calculations also allow the tracking product sales across the store's departments and retrieval of a summary of the highest-grossing departments in the store.<br><br>Best suited to Bamazonian women.",
+		"description": "This command line interface applications is an Amazon-like storefront with MySQL and Node. Bamazon's essential function is to take in orders from customers and depletes stock from the store's inventory. SQL-based calculations also allow the tracking product sales across the store's departments and retrieval of a summary of the highest-grossing departments in the store.<br><br>A real jungle of command-line possibilities...",
 		"github": "https://github.com/allysmith424/bamazon"
 
+	}, {
+
+		"id": "buyersWorkbench",
+		"title": "Buyers Workbench",
+		"image": "assets/images/appScreenshots/fullStack/buyersWorkbench.jpeg",
+		"description": "This enterprise web app answers the specific needs of a purchasing department. A full-stack app with an SQL database combines sales orders, purchase orders, and product inventory to provide the purchaser with a rich dashboard full of crucial daily information.",
+		"link": "https://pied-piper-bw.herokuapp.com/",
+		"github": "https://github.com/allysmith424/buyersWorkbench"
+
+	}, {
+
+		"id": "rankingsDebate",
+		"title": "FIFA Rankings Debate",
+		"image": "assets/images/appScreenshots/fullStack/rankingsDebate.jpeg",
+		"description": "FIFA Rankings are rarely very accurate - so let's debate them. By scraping the latest FIFA Rankings, storing them to a Mongo databse and rendering to the front end, this full stack app let's us do <em>exactly</em> that.",
+		"link": "https://young-chamber-41540.herokuapp.com/",
+		"github": "https://github.com/allysmith424/mongoScraper"
+	}, {
+
+		"id": "clickyGame",
+		"title": "Manchester United Click Game",
+		"image": "assets/images/appScreenshots/frontEnd/clickyGame.jpeg",
+		"description": "Brain health - vitally important. Manchester United - even more important, no question.<br><br>Test the memory with a React application that requires the user to remember the string of players they've clicked. React combines with Bootstrap in this front-end only web app.",
+		"link": "https://allysmith424.github.io/clickyGame/",
+		"github": "https://github.com/allysmith424/clickyGame"
 	}
 
 ];

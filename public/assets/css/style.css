@@ -3,6 +3,7 @@
 COLORS:
 orange: #ff6100
 blue/grey: #0e2c3a
+slightly lighter blue/grey: #26414D
 lighter blue/grey: #566b75
 very light grey: #F7F8F9
 
@@ -96,14 +97,14 @@ p {
 	position: relative;
 }
 
-.secondPage__stripe.title, 
+.secondPage__stripe.title,
 .thirdPage__stripe.title {
 	background-color: #0e2c3a;
-	position: relative; 
+	position: relative;
 	height: 10vh;
 }
 
-.secondPage__stripe.even, 
+.secondPage__stripe.even,
 .thirdPage__stripe.even {
 	height: 5vh;
 }
@@ -132,7 +133,7 @@ p {
 
 .secondPage__grid-container1,
 .secondPage__grid-container2,
-.secondPage__grid-container3 
+.secondPage__grid-container3
  {
 	padding-top: 3rem;
 }
@@ -227,7 +228,7 @@ p {
 	border: 0.5rem solid #ff6100;
 	left: 5vw;
 	top: 5vh;
-	position: absolute; 
+	position: absolute;
 }
 
 .about-me {
@@ -241,7 +242,7 @@ p {
 
 .about-me__text p {
 	padding-left: : 2rem;
-	padding-top: 20vh;
+	padding-top: 15vh;
 }
 
 .about-me__image {
