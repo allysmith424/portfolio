@@ -463,8 +463,6 @@
 
 		$(document).ready(function() {
 
-			console.log("Hello Ally");
-
 			$('#fullpage').fullpage({
 				sectionsColor: ['#ff6100', '#fff', '#fff', '#0e2c3a'],
 				anchors: ['firstPage', 'secondPage', 'thirdPage', 'lastPage'],
@@ -475,6 +473,7 @@
 
 			var $grid = $('.grid').isotope({
 
+				filter: '.html5',
 			  itemSelector: '.grid-item',
 			  percentPosition: true,
 			  masonry: {
@@ -483,11 +482,7 @@
 
 			});
 
-			$grid.isotope({ filter: ".html5" });
-
 			$(".technology-filter").on("click", function() {
-
-				console.log("Ally!");
 
 				var filterValue = "."
 
