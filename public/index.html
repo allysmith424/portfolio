@@ -403,15 +403,15 @@
 
 					<div class="lastPage__form-div six columns">
 
-						<form class="lastPage__form">
+						<form class="lastPage__form" action="https://formspree.io/allysmith424@gmail.com">
 						  <div class="row">
 						    <div class="six columns">
 						      <label for="exampleEmailInput">Your email</label>
-						      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+						      <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput" name="senderEmail">
 						    </div>
 						    <div class="six columns">
 						      <label for="exampleRecipientInput">Reason for contacting</label>
-						      <select class="u-full-width" id="exampleRecipientInput">
+						      <select class="u-full-width" id="exampleRecipientInput" name="senderReason">
 						        <option value="Option 1">Questions</option>
 						        <option value="Option 2">Potential work</option>
 						        <option value="Option 3">Talk England's chances at the World Cup</option>
@@ -419,7 +419,7 @@
 						    </div>
 						  </div>
 						  <label for="exampleMessage">Message</label>
-						  <textarea class="u-full-width" placeholder="Hi Ally…" id="exampleMessage"></textarea>
+						  <textarea class="u-full-width" placeholder="Hi Ally…" id="exampleMessage" name="senderMessage"></textarea>
 						  <input class="lastPage__submit-btn" type="submit" value="Submit">
 						</form>
 
