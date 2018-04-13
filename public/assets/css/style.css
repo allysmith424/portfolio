@@ -17,6 +17,13 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+html,
+body,
+#fullpage,
+.section {
+  height: 100%;
+}
+
 p {
 	color: #3c3839;
 }
