@@ -443,6 +443,10 @@
 
 	<script type="text/javascript">
 
+		function clearProject() {
+
+		}
+
 		function displayProject(slide, url) {
 
 			$.get(url).then(function(project) {
@@ -520,6 +524,10 @@
 				$(".secondPage__project-focus" + slide).removeClass("displayed").addClass("undisplayed");
 
 				$(".title-stripe__nav, .fp-controlArrow").removeClass("undisplayed").addClass("displayed");
+
+				$("#project-focus__title1, #project-focus__title2, #project-focus__title3, #project-focus__text1, #project-focus__text2, #project-focus__text3").text("");
+
+				$("#project-focus__img1, #project-focus__img2, #project-focus__img3").attr("href", "#");
 
 			});
 
