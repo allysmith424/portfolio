@@ -6,7 +6,7 @@ var project = [
 		"title": "Friend Finder",
 		"image": "assets/images/appScreenshots/fullStack/friendFinder.jpeg",
 		"description": "A compatibility-based 'FriendFinder' application - basically a dating app. This full-stack site takes in results from user surveys and compares the answers with those of other users. The app then displays the name and picture of the user with the best overall match. Express handles the routing.<br><br>Because we get by with a little help from out friends.",
-		"link": "https://salty-reaches-46042.herokuapp.com/",
+		"link": "https://the-friend-finder-2018.herokuapp.com/",
 		"github": "https://github.com/allysmith424/friendFinder"
 
 	}, {
@@ -15,7 +15,7 @@ var project = [
 		"title": "'Ave a Burger!'",
 		"image": "assets/images/appScreenshots/fullStack/burger.jpeg",
 		"description": "A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM. The app follows the MVC design pattern, uses Node and MySQL to query and route data, and relies on Handlebars to generate HTML.<br><br>The yummiest part about this is probably the homemade ORM.",
-		"link": "https://serene-island-92487.herokuapp.com/",
+		"link": "https://ave-a-burger.herokuapp.com/",
 		"github": "https://github.com/allysmith424/burger"
 
 	}, {
@@ -102,7 +102,7 @@ var project = [
 		"title": "FIFA Rankings Debate",
 		"image": "assets/images/appScreenshots/fullStack/rankingsDebate.jpeg",
 		"description": "FIFA Rankings are rarely very accurate - so let's debate them. By scraping the latest FIFA Rankings, storing them to a Mongo databse and rendering to the front end, this full stack app let's us do <em>exactly</em> that.",
-		"link": "https://young-chamber-41540.herokuapp.com/",
+		"link": "https://fifa-rankings-debate.herokuapp.com/",
 		"github": "https://github.com/allysmith424/mongoScraper"
 	}, {
 
