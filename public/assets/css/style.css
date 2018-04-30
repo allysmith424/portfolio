@@ -146,29 +146,38 @@ p {
 	margin-top: 3rem;
 }
 
-.title-stripe__text {
-	padding-top: 1rem;
-	letter-spacing: .2rem;
-	text-transform: uppercase;
-	font-size: 2rem;
+.title-stripe__text--primary,
+.title-stripe__text--left,
+.title-stripe__text--right {
+	position: relative;
 }
 
 .title-stripe__text--primary {
 	font-family: 'Lato', sans-serif;
-	/* letter-spacing: .4rem; */
 	text-transform: lowercase;
-	padding-top: 3rem;
 	font-size: 4rem;
-	padding-left: 10%;
 	color: #fff;
-	padding-right: 2rem
+	text-align: center;
+	width: auto;
 }
 
-.title-stripe__text--sub {
+.title-stripe__text--left,
+.title-stripe__text--right {
 	font-size: 1.5rem;
 	display: in-line;
 	color: #ff6100;
-/*	padding-left: .5rem;*/
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+}
+
+.title-stripe__text--left {
+	text-align: left;
+	padding-left: 5%;
+}
+
+.title-stripe__text--right {
+	text-align: right;
+	padding-right: 5%;
 }
 
 .title-stripe__nav {
