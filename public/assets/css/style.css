@@ -328,6 +328,9 @@ label {
 		.lastPage__image-div {
 			display: none;
 		}
+		.title-stripe__nav {
+			display: none;
+		}
 }
 
 @keyframes moveIn {
