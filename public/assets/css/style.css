@@ -6,7 +6,7 @@ blue/grey: #0e2c3a
 slightly lighter blue/grey: #26414D
 lighter blue/grey: #566b75
 very light grey: #F7F8F9
-even lighter grey: #f2f2f2
+
 */
 
 html {
@@ -66,7 +66,7 @@ p {
 
 .firstPage__text--primary {
 	font-family: 'Lato', sans-serif;
-	/* letter-spacing: .4rem; */
+	letter-spacing: .4rem;
 	color: #0e2c3a;
 	text-transform: lowercase;
 	padding-bottom: 2rem;
@@ -142,53 +142,39 @@ p {
 .secondPage__grid-container2,
 .secondPage__grid-container3
  {
-	padding: 3rem;
-	margin-top: 3rem;
+	padding-top: 3rem;
 }
 
-.title-stripe__text--primary,
-.title-stripe__text--left,
-.title-stripe__text--right {
-	position: relative;
+.title-stripe__text {
+	padding-top: 1rem;
+	letter-spacing: .2rem;
+	text-transform: uppercase;
+	font-size: 2rem;
 }
 
 .title-stripe__text--primary {
 	font-family: 'Lato', sans-serif;
+	letter-spacing: .4rem;
 	text-transform: lowercase;
+	padding-top: 3rem;
 	font-size: 4rem;
+	padding-left: 10%;
 	color: #fff;
-	text-align: center;
-	width: auto;
+	padding-right: 2rem
 }
 
-.title-stripe__text--left,
-.title-stripe__text--right {
+.title-stripe__text--sub {
 	font-size: 1.5rem;
 	display: in-line;
 	color: #ff6100;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-}
-
-.title-stripe__text--left {
-	text-align: left;
-	padding-left: 5%;
-}
-
-.title-stripe__text--right {
-	text-align: right;
-	padding-right: 5%;
+/*	padding-left: .5rem;*/
 }
 
 .title-stripe__nav {
 	position: absolute;
-	left: 50%;
-  margin-left: -50;
-	top: 10vh;
-}
-
-.title-stripe__nav button {
-	color: #0e2c3a;
+	right: 5vw;
+	top: 5vh;
+	color: #fff;
 }
 
 .technology-filter {
@@ -214,7 +200,6 @@ p {
 #project-focus__img2,
 #project-focus__img3 {
 	width: 90%;
-	padding-left: 3rem;
 }
 
 #project-focus__text1,
@@ -312,12 +297,13 @@ p {
 
 label {
 	color: #fff;
+	letter-spacing: .2rem;
 	font-family: 'Open Sans', sans-serif;
 }
 
 .lastPage__submit-btn {
-	background-color: none !important;
-	color: #fff !important;
+	background-color: #fff !important;
+	color: #566b75 !important;
 }
 
 .lastPage__image-div {
