@@ -316,6 +316,20 @@ label {
 	left: 20%;
 }
 
+@media only screen and (max-width: 1150px) {
+
+    .about-me__images {
+        display: none;
+    }
+		.about-me__text p {
+			padding-top: 7vh;
+			margin: 0 auto;
+		}
+		.lastPage__image-div {
+			display: none;
+		}
+}
+
 @keyframes moveIn {
 	0% {
 		opacity: 0;
