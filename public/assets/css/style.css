@@ -331,6 +331,9 @@ label {
 		.title-stripe__nav {
 			display: none;
 		}
+		.firstPage__header p {
+			font-size: .9rem;
+		}
 }
 
 @keyframes moveIn {
