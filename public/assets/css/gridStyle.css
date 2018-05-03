@@ -50,6 +50,7 @@ body {
 
 .grid-item__overlay:hover {
   opacity: .99;
+  cursor: pointer;
 }
 
 .overlay__text {
@@ -61,4 +62,16 @@ body {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.stack-overlay {
+  background-color: #F7F8F9;
+}
+
+.stack-overlay:hover {
+  cursor: default;
+}
+
+.stack-overlay .overlay__text {
+  color: #ff6100;
 }
