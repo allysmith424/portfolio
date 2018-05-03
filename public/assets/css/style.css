@@ -187,6 +187,14 @@ p {
 	letter-spacing: .2rem;
 }
 
+.filter-text {
+	color: #ff6100;
+}
+
+.filter-text:hover {
+	color: #ff6100;
+}
+
 .secondPage__project-focus1,
 .secondPage__project-focus2,
 .secondPage__project-focus3 {
