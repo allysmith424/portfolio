@@ -75,3 +75,19 @@ body {
 .stack-overlay .overlay__text {
   color: #ff6100;
 }
+
+@media only screen and (max-width: 1150px) {
+
+  .grid {
+    left: 12vw;
+  }
+
+  .grid-sizer,
+  .grid-item {
+    width: 35%;
+  }
+  .grid-item {
+    float: none;
+  }
+
+}
