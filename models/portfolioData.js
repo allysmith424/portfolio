@@ -112,6 +112,14 @@ var project = [
 		"description": "Brain health - vitally important. Manchester United - even more important, no question.<br><br>Test the memory with a React application that requires the user to remember the string of players they've clicked. React combines with Bootstrap in this front-end only web app.",
 		"link": "https://allysmith424.github.io/clickyGame/",
 		"github": "https://github.com/allysmith424/clickyGame"
+	}, {
+
+		"id": "nextGig",
+		"title": "NextGig",
+		"image": "assets/images/appScreenshots/fullStack/nextGig.jpeg",
+		"description": "A dashboard designed to make job hunting infinitely easier.<br><br>With a front end built in React, this web app provides a space for job hunters to organise themselves. Tracking each application thorugh the entire life cycle, users are able to keep notes, reminders, and contacts, plan with a calendar, and map out prospects with an integrated Google Map.<br><br>I'd hope that this full MERN stack app provides a pretty good alternative to an Excel spreadsheet...",
+		"link": "https://next-gig.herokuapp.com",
+		"github": "https://github.com/allysmith424/jobTracker"
 	}
 
 ];
